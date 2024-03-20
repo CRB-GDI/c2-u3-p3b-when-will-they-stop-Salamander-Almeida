@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Xml.Serialization;
 using LinkedLists;
 
 namespace ProgrammingAssignment2
@@ -34,11 +35,24 @@ namespace ProgrammingAssignment2
 				// course add more space between the
 				// comments as needed
 
+				int value = GetValue();
+				int count = 0;
+				int sum = 0;
+				while (value != 0)
+				{
+                    //run this code
+                    Console.WriteLine(value);
+                    value = int.Parse(Console.ReadLine());
+                    //Console.Writeline(value)
+                    if (value == 0)
+                    {
+						count++;
+                    }
+                }
 
-
-				// Don't add or modify any code below
-				// this comment
-				input = Console.ReadLine();
+                // Don't add or modify any code below
+                // this comment
+                input = Console.ReadLine();
 			}
 		}
 
