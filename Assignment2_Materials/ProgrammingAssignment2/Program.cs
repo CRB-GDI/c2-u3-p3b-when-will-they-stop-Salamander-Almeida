@@ -38,17 +38,23 @@ namespace ProgrammingAssignment2
 				int value = GetValue();
 				int count = 0;
 				int sum = 0;
-				while (value != 0)
+				float adv = 0f;
+				while (value != -1)
 				{
-                    //run this code
-                    Console.WriteLine(value);
-                    value = int.Parse(Console.ReadLine());
-                    //Console.Writeline(value)
-                    if (value == 0)
+					//run this code
+					//Console.WriteLine(value);
+					count = count + 1;
+					sum = value + sum;
+					value = GetValue();
+				}
+				
+                    if (count > 0) 
                     {
-						count++;
+					adv = (float)sum / count;
                     }
-                }
+				Console.WriteLine(count + " " + adv);
+
+                
 
                 // Don't add or modify any code below
                 // this comment
